@@ -1,5 +1,5 @@
 
-package model;
+package com.example.a20190602_kwawannan_nycschools.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
