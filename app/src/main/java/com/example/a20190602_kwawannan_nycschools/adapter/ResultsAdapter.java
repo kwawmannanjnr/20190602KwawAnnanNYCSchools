@@ -53,6 +53,15 @@ public class ResultsAdapter extends RecyclerView.Adapter<ResultsAdapter.mVH> {
     }
 
     private String[] myData;
+
+    public List<HighSchool> getC() {
+        return c;
+    }
+
+    public void setC(List<HighSchool> c) {
+        this.c = c;
+    }
+
     private List<HighSchool> c;
 
 
@@ -111,6 +120,7 @@ public class ResultsAdapter extends RecyclerView.Adapter<ResultsAdapter.mVH> {
 
         }
     }
+
 
 
     @Override
