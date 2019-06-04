@@ -13,6 +13,8 @@ public interface MainActivityContract {
     interface View {
         void  initMainActivity();
         void updateSchoolList(List<HighSchool> schools);
+        void showToast(String text, int duration);
+
     }
 
     interface Presenter {

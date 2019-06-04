@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">20190602-[KwawAnnan]-NYCSchools</string>
+    <string name="attendance">School Attendance Rate: </string>
+    <string name="title_activity_sat">SatActivity</string>
+    <string name="title_activity_sat_score">SatScoreActivity</string>
+
 </resources>
