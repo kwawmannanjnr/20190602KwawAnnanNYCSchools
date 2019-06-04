@@ -21,6 +21,14 @@ public class SatScorePresenter implements SatScoreContract.Presenter {
 
     ApiInterface service1 ;
 
+    public Map<String, SatScore> getMap() {
+        return map;
+    }
+
+    public void setMap(Map<String, SatScore> map) {
+        this.map = map;
+    }
+
     Map<String, SatScore> map = new HashMap<>();
     List<SatScore> satScores;
     SatScore mySchool;

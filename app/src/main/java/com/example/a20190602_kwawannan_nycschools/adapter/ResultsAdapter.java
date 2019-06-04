@@ -121,6 +121,10 @@ public class ResultsAdapter extends RecyclerView.Adapter<ResultsAdapter.mVH> {
         }
     }
 
+    public HighSchool getItemAtPosition(int position) {
+        return c.get(position);
+    }
+
 
 
     @Override

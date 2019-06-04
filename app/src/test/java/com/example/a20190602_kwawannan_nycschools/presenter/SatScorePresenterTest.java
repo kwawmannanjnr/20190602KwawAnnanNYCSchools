@@ -2,6 +2,7 @@ package com.example.a20190602_kwawannan_nycschools.presenter;
 
 import android.support.annotation.NonNull;
 
+import com.example.a20190602_kwawannan_nycschools.api_client.ApiClient;
 import com.example.a20190602_kwawannan_nycschools.api_client.ApiInterface;
 import com.example.a20190602_kwawannan_nycschools.contracts.SatScoreContract;
 import com.example.a20190602_kwawannan_nycschools.model.SatScore;
@@ -42,6 +43,7 @@ public class SatScorePresenterTest {
     public void setUp() throws Exception {
 
         MockitoAnnotations.initMocks(this);
+        MockitoAnnotations.initMocks(ApiInterface.class);
         satScorePresenter = new SatScorePresenter();
         satScorePresenter.addView(view);
     }
@@ -76,17 +78,9 @@ public class SatScorePresenterTest {
     @Test
     public void loadDetails() {
         satScorePresenter = new SatScorePresenter();
-
-        satScorePresenter.LoadDetails("");
-        verify(view).setSatScore(new SatScore());
+        satScorePresenter.LoadDetails("7134");
+        assertNotEquals(satScorePresenter.satScores.size(),satScorePresenter.getMap().size());
     }
 
-    @Test
-    public void getSatScore() {
 
-    }
-
-    @Test
-    public void storeAndGetSatScore() {
-    }
 }
